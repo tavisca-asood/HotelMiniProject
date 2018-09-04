@@ -9,13 +9,8 @@ PLease follow these steps to start the app -
 2) Install MongoDb Community (https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.2-signed.msi/download).
 4) Clone this repository on your system.
 5) Open a terminal inside the 'HotelsMiniProject' folder.
-6) Install the express node module - "npm install express".
-7) Install the MongoDB node module - "npm install mongodb".
-8) Install the backbone.js node module - "npm install backbone".
-9) Install the underscore.js node module - "npm install underscore".
-10) Install the jquery node module - "npm install jquery".
-11) Enter the following command only once on a new system to create the database - "node database.js".
-12) Enter the following command to start the app - "npm start".
+6) Enter the following command only once on a new system to create the database - "node database.js".
+7) Enter the following command to start the app - "npm start".
  
 Contributors: 
 1) Saurabh : WebUI, JQuery
