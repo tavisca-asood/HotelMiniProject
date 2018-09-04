@@ -1,0 +1,780 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.frontBody{
+    background:url('/images/back.jpg');
+ background-repeat: no-repeat;
+}
+.header {
+    overflow: hidden;
+    background-color: #581845;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    width: 150px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a {
+    background-color: #ddd;
+    color: black;
+}
+
+.header a.sideButton {
+    padding-top: 32px;
+    padding-bottom: 31px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-right {
+    float: right;
+
+}
+
+.dataFound {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    margin-top:0.3em;
+}
+
+.green {
+    background-color: #027F01;
+    color: #FFFFFF;
+    border: none;
+    float: right;
+    margin-top: 35px;
+    padding: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 30px;
+	border-radius: 15px;
+    width: 270px;
+}
+
+.checked {
+    color: #DAA520;
+}
+
+.red {
+    background-color: #FF0000;
+    border: none;
+    float: right;
+    margin-top: 35px;
+    padding: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 30px;
+    color: #FFFFFF;
+	border-radius: 15px;
+    width: 270px;
+}
+
+.yellow {
+    border: none;
+    float: right;
+    margin-top: 35px;
+    padding: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: #F5D90E;
+    color: #000000;
+	border-radius: 15px;
+    width: 270px;
+}
+
+/*  DOCUMENTATION
+*/
+.table-format
+{
+    width:90%;
+    height:40%;
+    border: 1px solid grey;
+}
+.button-html-green
+{
+    background-color: #027F01;
+    color: #FFFFFF;
+    border: none;
+   margin-top: 35px;
+    padding: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 30px;
+	border-radius: 15px;
+    width: 270px;
+  
+}
+.button-html-yellow{
+    cursor: pointer;
+    font-size: 1.4em;
+    margin-top: 35px;
+    padding: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: #F5D90E;
+    color: #000000;
+	border-radius: 15px;
+    width: 270px;
+}
+.button-html-red
+{
+    background-color: #FF0000;
+    border: none;
+   margin-top: 35px;
+    padding: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 30px;
+    color: #FFFFFF;
+	border-radius: 15px;
+    width: 270px;
+}
+.About-image {
+    width: 800px;
+    height: 450px;
+    align-content: center;
+}
+
+.About {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.About-Content {
+    padding-left: 15px;
+    width: 600px;
+    align-items: center;
+    font-family: serif;
+    text-align: justify;
+}
+
+.tabcontent p {
+    padding-bottom: 10px;
+}
+
+.tabcontent {
+    padding-top: 88px;
+    padding-left: 175px;
+}
+
+.Insidetabcontent {
+    padding-left: 175px;
+}
+
+.serch-button {
+    padding-left: 50px;
+}
+
+.Pre-display {
+    font-size: 20px;
+}
+
+/*  DOCUMENTATION ENDS
+*/
+
+/*Side Navbar*/
+
+/* Style the tab */
+
+.tab {
+    float: left;
+    width: 175px;
+    background-color: #f1f1f1;
+    height: 837px;
+    overflow: auto;
+	position: fixed;
+	top: 88px;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    display: block;
+    background-color: #555;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create an active/current "tab button" class */
+
+.tab button.active {
+    background-color: #581845;
+    color: white;
+}
+
+/* Style the tab content */
+
+/*Inside Button*/
+
+/* Style the tab */
+
+.tab-inside {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style the buttons inside the tab */
+
+.tab-inside button {
+    width: 250px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+#datef {
+    display: none;
+}
+
+#datet {
+    display: none;
+}
+
+/* Change background color of buttons on hover */
+
+.tab-inside button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+.tab-inside button.active {
+    background-color: #ccc;
+}
+
+.search-section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+.search-section div {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.search {
+    font-size: 1.5em;
+    border-radius: 0.4em;
+    padding-top: 0.2em;
+    width: 100%;
+    padding-bottom: 0.2em;
+    border: 1.2px solid #581845;
+}
+
+.search-box {
+    margin-top: 0.9em;
+    width: 50%;
+}
+
+span {
+    font-size: 1em;
+    display: block;
+}
+
+.book span {
+	padding-left: 30px;
+	padding-top: 2px;
+}
+
+.start-date,
+.last-date {
+    font-size: 1.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: 1.2px solid #581845;
+}
+
+.search-button {
+    margin-top: 1.4em;
+}
+
+.search-image {
+    width: 1.5em;
+    padding-top: 0.2em;
+    height: 1.6em;
+    cursor: pointer;
+}
+
+.container {
+    background-color: white;
+}
+
+.hotel-lists {
+    margin-top: 11.6em;
+    padding-bottom: 2.3em;
+    overflow: auto;
+}
+
+.hotel-list {
+    background-color: #fff;
+    padding: 1em 1em 1em;
+    border: none;
+    margin: 0 auto;
+    width: 75%;
+    height: 130px;
+    margin-top: 1.3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-holder {
+    height: 130px;
+}
+
+.hotel-image {
+    width: 214px;
+    height: 130px;
+}
+
+.book-button {
+    background-color: #4CAF50;
+    border: none;
+    float: right;
+    margin-top: 35px;
+    padding: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+.hotel-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.description {
+    margin-left: 2em;
+    font-size: 1.25em;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid;
+    width: 100%;
+    height: 1em;
+    padding: 10px 0px 10px 0px;
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0px;
+}
+.ui-datepicker {
+    width: auto;
+    height: auto;
+    background-color: #FFFFFF;
+    font: 9pt Arial, sans-serif;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+    top: 173px !important;
+}
+
+.ui-datepicker a {
+    text-decoration: none;
+}
+
+.ui-datepicker table {
+    width: 100%;
+
+}
+
+.ui-datepicker-header {
+    background: #2E3E62;
+    color: #e0e0e0;
+    font-weight: bold;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 2);
+    -moz-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+    box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+    text-shadow: 1px -1px 0px #000;
+    filter: dropshadow(color=#000, offx=1, offy=-1);
+    line-height: 30px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #111;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-image: url('/images/arrow.png');
+    background-repeat: no-repeat;
+    line-height: 600%;
+    overflow: hidden;
+}
+
+.ui-datepicker-prev {
+    float: left;
+    background-position: center -30px;
+}
+
+.ui-datepicker-next {
+    float: right;
+    background-position: center 0px;
+}
+
+.ui-datepicker thead {
+    border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker th {
+    text-transform: uppercase;
+    font-size: 6pt;
+    padding: 5px 0;
+    color: #000000;
+    text-shadow: 1px 0px 0px #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=0);
+}
+
+.ui-datepicker tbody td {
+    padding: 0;
+    border-right: 1px solid #bbb;
+}
+
+.ui-datepicker tbody td:last-child {
+    border-right: 0px;
+}
+
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker tbody tr:last-child {
+    border-bottom: 0px;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-shadow: 1px 1px 0px #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #dedede 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #dedede));
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #dedede 100%);
+    background: -o-linear-gradient(top, #FFFFFF 0%, #dedede 100%);
+    background: -ms-linear-gradient(top, #FFFFFF 0%, #dedede 100%);
+    background: linear-gradient(top, #FFFFFF 0%, #dedede 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#dedede', GradientType=0);
+    -webkit-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+    -moz-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+    box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+    background: #2E3E62;
+    color: #FFFFFF;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background: #6eafbf;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    color: #e0e0e0;
+    text-shadow: 0px 1px 0px #4d7a85;
+    filter: dropshadow(color=#4d7a85, offx=0, offy=1);
+    border: 1px solid #55838f;
+    position: relative;
+    margin: -1px;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    background: #f4f4f4;
+    color: #b4b3b3;
+}
+
+.ui-datepicker-calendar td:first-child .ui-state-active {
+    width: 29px;
+    margin-left: 0;
+}
+
+.ui-datepicker-calendar td:last-child .ui-state-active {
+    width: 29px;
+    margin-right: 0;
+}
+
+.ui-datepicker-calendar tr:last-child .ui-state-active {
+    height: 29px;
+    margin-bottom: 0;
+}
+
+p {
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.middle-section {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+}
+
+.outer {
+    display: flex;
+    flex: wrap;
+    width: 70%;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.inner {
+    margin: 0 auto;
+}
+
+.submit {
+    margin: 0 auto;
+    height: 100%;
+}
+
+/*end*/
+
+@media screen and (max-width: 1561px) {
+    .About-Content {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1477px) {
+    .hotel-list {
+        height: 250px;
+        justify-content: center;
+    }
+
+    .description {
+        margin-left: 63px;
+    }
+
+    .image-holder {
+        height: 150px;
+    }
+
+    .hotel-image {
+        width: 300px;
+        height: 150px;
+    }
+
+    .green, .red, .yellow {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1176px) {
+    .tab-inside button {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 997px) {
+    .hotel-lists {
+        margin-top: 240px;
+    }
+
+    .search-box {
+        width: 80%;
+    }
+
+    .start-date,
+    .last-date {
+        width: 250px;
+    }
+
+    span {
+        padding-top: 5px;
+    }
+
+    .hotel-list {
+        height: 375px;
+        width: 60%;
+    }
+
+    .description {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+
+    .image-holder {
+        height: 175px;
+    }
+
+    .hotel-image {
+        width: 100%;
+        height: 175px;
+    }
+
+    .search-button {
+        margin-top: 1.7em;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .About-Content {
+        width: 400px;
+    }
+
+    .About-image {
+        width: 400px;
+    }
+
+    .tab-inside button {
+        width: 100%;
+    }
+
+    .tab {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .hotel-lists {
+        margin-top: 360px;
+		padding-bottom: 4.3em;
+    }
+
+    .search-section div {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .About-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+		width: 35%;
+        float: right;
+        display: block;
+        text-align: center;
+    }
+    .header-right {
+        float: none;
+    }
+
+    .header a.logo {
+        width: 35%;
+		float: left;
+    }
+
+    .tab {
+        width: 120px;
+        height: 1100px;
+    }
+
+    .tabcontent,
+    .Insidetabcontent {
+        padding-left: 120px;
+    }
+
+    .serch-button {
+        padding-left: 10px;
+    }
+
+    .hotel-lists {
+        margin-top: 318px;
+		padding-bottom: 3.3em;
+    }
+
+    .search-section div {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    .start-date,
+    .last-date {
+        width: 300px;
+    }
+
+    .hotel-list {
+        width: 80%;
+    }
+	
+	.search-section {
+        padding-top: 0px;
+		padding-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .start-date,
+    .last-date {
+        width: 100%;
+    }
+	
+	.hotel-lists {
+		padding-bottom: 5.3em;
+    }
+	
+	footer {
+		height: 2em;
+	}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="frontBody">
+    <div class="header">
+        <a href="index.html" class="logo"><img src="Images/Logo/HotelShape4.png" class="Logo" style="height: 60px"></a>
+        <div class="header-right">
+            <a class="sideButton" href="documentation.html">Documentation</a>
+        </div>
+        <div class="search-section">
+            <div class="search-box">
+                <input id="input" class="search" name="hotels" type="text" placeholder="Search" />
+            </div>
+            <p role="alert" id="datef">Enter the From date in format DD/MM/YYYY</p>
+            <div aria-describedby="datef">
+                <span aria-hidden="true">From:</span>
+                <input id="from" name="startDate" class="start-date" type="text" size="12" maxlength="10" placeholder="DD/MM/YYYY" aria-hidden="true"
+                    autocomplete="off" />
+            </div>
+            <p role="alert" id="datet">Enter the To date in format DD/MM/YYYY</p>
+            <div aria-describedby="datet">
+                <span aria-hidden="true">To:</span>
+                <input id="to" class="last-date" name="endDate" type="text" size="12" maxlength="10" placeholder="DD/MM/YYYY" aria-hidden="true"
+                    autocomplete="off" /><span class="error"></span>
+            </div>
+            <div>
+                <button class="search-button">
+                    <img class="search-image" src="Images/search.png" alt="Search" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="hotel-lists">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        Copyright BackBone Team (Tavisca Solutions Pvt Ltd.)
+    </footer>
+    <script class="contactTemplate" id="profileTemplate" type="text/template">
+        <div class="hotel-list">
+            <div class="image-holder"><img class="hotel-image" src="Images/Hotels/<%= logo %>" /></div>
+            <div class="description">
+                <span class="hotel-name"> <%= name%></span>
+                <span><%=address %></span>
+            </div>
+            <div class="book">
+                <button class="<%= _id %>">Book Now</button>
+                <span><%= startDate1 %> <%= endDate1 %></span>  
+            </div>
+        </div>
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/underscore/underscore.js"></script>
+    <script src="js/backbone/backbone.js"></script>
+    <script src="js/data.json"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

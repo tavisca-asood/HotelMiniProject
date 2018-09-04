@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="document" onload="Documentation()">
+    <!--            ***header-bar***        -->
+    <div class="header">
+        <a href="index.html" class="logo"><img src="Images/Logo/HotelShape4.png" class="Logo" style="height: 60px"></a>
+        <div class="header-right">
+            <a class="sideButton" href="index.html">Back</a>
+        </div>
+    </div>
+    <!--            ****side navigation***      -->
+    <div class="tab">
+        <button class="tablinks" onclick="ActiveContent(event, 'Default')" id="defaultOpen">About</button>
+        <button class="tablinks" onclick="ActiveContent(event, 'Buttons')">Buttons</button>
+        <button class="tablinks" onclick="ActiveContent(event, 'Input-Tags')">Input Tags</button>
+    </div>
+    <!--         ****ABOUT PAGE****               -->
+    <div id="Default" class="tabcontent">
+        <center>
+            <h3>About</h3>
+        </center>
+        <center><img src="Images/about.png" class="About-image"></center>
+        <div class="About">
+            <div class="About-Content">
+                <h3 style="color:#0080FF">Hotel search</h3>
+                <p style="color: #7285A5">Our's hotel search allows users to compare hotel availability in just a few clicks.Travellers
+                    regularly use the hotel comparison to compare deals in the same city. Get information for weekend trips
+                    to cities and you can find the right hotel quickly and easily. Hill stations its surrounding area are
+                    great for trips that are a week or longer with the numerous hotels available.</p>
+            </div>
+            <div class="About-Content">
+                <h3 style="color:#0080FF">How to book</h3>
+                <p style="color: #7285A5">Our hotel searches with an extensive price comparison and hotels availibility.
+                    The prices shown come from numerous hotels and booking websites. This means that while users decide on
+                    our site, hotel best suits their needs. By entering the name of hotel and clicking the serch button,
+                    User may get the list of all available hotels. User can book on the bases of availability of hotels.
+                    </p>
+            </div>
+        </div>
+    </div>
+    <!--        ****BUTTONS****            -->
+    <div id="Buttons" class="tabcontent">
+        <center>
+            <h3>Button</h3>
+        </center>
+        <center>
+            <p>Buttons are interactive components which improves user accessibility on site.</p>
+        </center>
+        <div class="tab-inside">
+            <button class="Insidetablinks" onclick="ActiveInsideContent(event, 'Search')">Search Button</button>
+            <button class="Insidetablinks" onclick="ActiveInsideContent(event, 'Available')">Available Button</button>
+            <button class="Insidetablinks" onclick="ActiveInsideContent(event, 'Partially')">Partially Button</button>
+            <button class="Insidetablinks" onclick="ActiveInsideContent(event, 'NotAvailable')">NotAvailable Button</button>
+        </div>
+    </div>
+    <!--        ***INPUTS***            -->
+    <div id="Input-Tags" class="tabcontent">
+        <center>
+            <h3>Input</h3>
+        </center>
+        <center>
+            <p>Input elements are interactive components which improves user accessibility on site.It allows user to insert
+                valid input on the page.</p>
+        </center>
+        <div class="tab-inside">
+            <button class="Insidetablinks" onclick="ActiveInsideContent(event, 'SearchBar')">Search bar</button>
+            <button class="Insidetablinks" onclick="ActiveInsideContent(event, 'Calender')">Calender</button>
+        </div>
+    </div>
+    <!--            *** BUTTON HTML ***     -->
+    <div id="Search" class="Insidetabcontent">
+        <center>
+            <h3>Search Button</h3>
+        </center>
+        <div class="serch-button">
+            <p class="para">Search button is used to get all the available hotel list with the enterded name in Serch Input.</p>
+            <br>
+            <table class="table-format">
+                <tr>
+                    <td>
+                        <center>
+                            <button class="search-button">
+                                <img class="search-image" src="Images/search.png" />
+                            </button>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="Pre-display">
+                                            &lt;button class="search-button"&gt;
+                                                &lt;img class="search-image" src="Images/search.png"/&gt;  
+                                            &lt;/button&gt;      
+                            </pre>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+    <div id="Available" class="Insidetabcontent">
+        <center>
+            <h3>Available Button</h3>
+        </center>
+        <div class="serch-button">
+            <p class="para">Available Button is used to display the availibility of hotel.The button would change its color
+                to green if the bookings are valid. </p>
+            <br>
+            <table class="table-format">
+                <tr>
+                    <td>
+                        <center>
+                            <button class="button-html-green">BOOK NOW</button>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="Pre-display">
+                                            &lt;button class="button-html-green"&gt;
+                                                Book Now
+                                            &lt;/button&gt;
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div id="Partially" class="Insidetabcontent">
+        <center>
+            <h3>Partially Available</h3>
+        </center>
+        <div class="serch-button">
+            <p class="para">Not Available Button is used to display the availibility of hotel.The button would change its
+                color to yellow if the bookings are valid. </p>
+            <br>
+            <table class="table-format">
+                <tr>
+                    <td>
+                        <center>
+                            <button class="button-html-yellow">BOOK NOW</button>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="Pre-display">
+                                            &lt;button class="button-html-yellow"&gt;
+                                                Book Now
+                                            &lt;/button&gt;
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div id="NotAvailable" class="Insidetabcontent">
+        <center>
+            <h3>Not Available</h3>
+        </center>
+        <div class="serch-button">
+            <p class="para">Not Available Button is used to display the availibility of hotel.The button would change its
+                color to yellow if the bookings are not valid. </p>
+            <br>
+            <table class="table-format">
+                <tr>
+                    <td>
+                        <center>
+                            <button class="button-html-red">NOT AVAILABLE</button>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="Pre-display">
+                                            &lt;button class="button-html-red"&gt;
+                                                Book Now
+                                            &lt;/button&gt;
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--        ****SERCH HTML****          -->
+    <div id="SearchBar" class="Insidetabcontent">
+        <center>
+            <h3>Search Input</h3>
+        </center>
+        <div class="serch-button">
+            <p class="para">Search Input is used to get input from user.User would enter the name of hotel user wants to
+                serch. </p>
+            <br>
+            <table class="table-format">
+                <tr>
+                    <td>
+                        <br>
+                        <center>
+                            <div class="search-box">
+                                <input class="search" name="hotels" type="text" placeholder="Search" />
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="Pre-display">
+                        &lt;div class="search-box"&gt;
+                            &lt;input class="search" name="hotels" type="text" placeholder="Search" /&gt;
+                        &lt;/div&gt;
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div id="Calender" class="Insidetabcontent">
+        <center>
+            <h3>Calender</h3>
+        </center>
+        <div class="serch-button">
+            <p class="para">Calender is used to input "FROM" and "TO" date,user wants to travel.<br>FROM : Starting date
+                of trip.<br>TO : End date of Trip.</p>
+            <br>
+            <table class="table-format">
+                <tr>
+                    <td>
+                        <center>
+                            <br>
+                            <input id="from" name="startDate" class="start-date" type="text" size="12" maxlength="10" placeholder="DD/MM/YYYY" autocomplete="off"
+                            />
+                        </center>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="Pre-display">
+
+                        &lt;input id="start" name="startDate" class="start-date" type="text" size="12" 
+                            maxlength="10" placeholder="DD/MM/YYYY" autocomplete="off"/&gt;                      
+                                         
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
